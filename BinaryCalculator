@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class BinaryCalculator
+{
+    Public static void main(String args[])
+    {
+        System.out.println("Please enter a Binary number you want to convert");
+        Scanner input = new Scanner(System.in);
+        String number = input.nextLine(); //gets the number, i think
+        //Ok so I think the concept is basically the same the last one except slightly easier
+        int sum = 0
+        for(int i = number.length(); i > 0; i--)
+        {
+            double pow = Math.pow(2, i);
+            sum += (number.charAt(i) - '0')*pow;
+        }
+        System.out.println("The base 2 number "+ number + " is "+ sum + " in base 10");
+
+        input.close();
+    }
+}

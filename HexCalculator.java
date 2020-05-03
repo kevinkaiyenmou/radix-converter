@@ -7,7 +7,7 @@ import java.util.Scanner;
 //probably nothing.
 //maybe the math thing
 
-public class BaseCalculator
+public class HexCalculator
 {
     
     public static void main(String args[])
